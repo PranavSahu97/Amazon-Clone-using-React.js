@@ -1,0 +1,71 @@
+.header{
+    background-color : #131921;
+    display: flex;  /* by default nav stacks items on each other, for side by dispaly use this property*/
+    align-items: center; /* to align all items center */
+    position: sticky;
+    top: 0;
+    z-index: 100; /*always want header and nothing over header */ 
+}
+
+.header__logo {
+    width : 100px;
+    object-fit: contain; /* if screen resizes always keep aspect ratio fo amazon logo to be same */
+     margin: 0 20px; /* margin top & bottom, margin left & right */
+    margin-top: 18px;
+}
+
+.header__search{
+    display: flex;
+    flex: 1;  /* try and use up as much room as you can on the page as search bar takes maximum amount of space */
+}
+
+.header__searchInput{
+    height: 12px;
+    padding: 10px;
+    border: none;
+    width: 100%;
+}
+
+.header__searchIcon{ 
+    padding: 5px;  /* applies styling from the inside of element */
+    height: 22px !important;  /* overrides the default css of searchIcon  */
+    background-color: #cd9042;
+}
+
+.header__nav{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.header__link{
+    color: white;
+    text-decoration: none;  /* gets rids of underline that spans puts by default */
+}
+
+.header__option{
+    display: flex;
+    flex-direction: column; /* by default flex styles in a row direction */
+    margin-left: 10px;  /* margin adds style to the outside of element */
+    margin-right: 10px;
+    
+}
+
+.header__optionLineOne{
+    font-size: 10px;
+}
+
+.header__optionLineTwo{
+    font-size: 13px;
+    font-weight: 800;
+}
+
+.header__optionBasket{
+    display: flex;
+    align-items: center;
+
+}
+
+.header__basketCount{
+    margin-left: 10px;
+    margin-right: 10px;
+}
